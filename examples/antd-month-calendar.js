@@ -31,7 +31,11 @@ class Demo extends React.Component {
   static propTypes = {
     defaultValue: PropTypes.object,
   }
-
+  
+componentWillMount() {
+    document.title = 'Month Calendar';
+  }
+  
   constructor(props) {
     super(props);
 
